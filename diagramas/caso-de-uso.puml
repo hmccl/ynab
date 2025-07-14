@@ -1,0 +1,32 @@
+@startuml
+
+left to right direction
+skinparam packageStyle rectangle
+
+actor Familiar
+actor Gestor
+actor Instituição
+Familiar <|-right- Gestor
+
+rectangle YNAB {
+    Gestor -- (Cadastrar Familiar)
+
+    Familiar -- (Cadastrar objetivo)
+    (Cadastrar objetivo) <|-- (Cadastrar objetivo individual)
+    (Cadastrar objetivo) <|-- (Cadastrar objetivo familiar)
+
+    Familiar -- (Cadastrar crédito)
+    Familiar -- (Cadastrar débito)
+    (Cadastrar crédito) <.. (Adicionar recorrência) : <<extends>>
+    (Cadastrar débito) <.. (Adicionar recorrência) : <<extends>>
+
+    Familiar -- (Visualizar relatórios)
+    (Calcular patrimônio) -- Instituição
+    (Visualizar relatórios) ..> (Calcular patrimônio) : <<include>>
+
+    Familiar -- (Conectar instituições financeiras)
+    (Autorizar acesso) -- Instituição
+    (Conectar instituições financeiras) ..> (Autorizar acesso) : <<include>>
+}
+
+@enduml
