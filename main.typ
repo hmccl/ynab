@@ -25,7 +25,7 @@
 = Introdução
 
 A proposta deste documento é coletar, analisar e definir as necessidades e
-funcionalidades gerais de um sistema de controle financeiro.
+funcionalidades gerais de um sistema de controle financeiro familiar.
 O objetivo é fornecer uma base clara para o desenvolvimento desse sistema,
 de modo que atenda às necessidades das famílias que desejam organizar suas finanças.
 
@@ -36,11 +36,11 @@ de modo que atenda às necessidades das famílias que desejam organizar suas fin
 A educação financeira é um tópico que, nos últimos anos, tem sido muito comentado.
 O motivo: trata-se de um tema que todos deveriam conhecer. De acordo com a Confederação Nacional
 do Comércio (CNC), a quantidade de famílias que relataram que tem dívidas a vencer (cartão de
-crédito, cheque especial, carnê de loja, crédito consignado, empréstimo pessoal, cheque 
+crédito, cheque especial, carnê de loja, crédito consignado, empréstimo pessoal, cheque
 pré-datado e prestações de carro e casa), em Março de 2025, foi de 77,1%. @cnc
 
 Gerenciar os gastos nunca foi tão importante, diante de diversos fatores como a inflação crescente,
-a facilidade de acesso a jogos de azar e a instabilidade econômica global. Visto isso, é 
+a facilidade de acesso a jogos de azar e a instabilidade econômica global. Visto isso, é
 fundamental oferecer às famílias uma plataforma digital que facilite o controle financeiro,
 o estabelecimento de metas e a organização de sua vida econômica.
 
@@ -121,25 +121,43 @@ controle e gerenciamento das finanças das famílias interessadas.
   )
 )
 
+//#figure(
+//  table(
+//    columns: 2,
+//    table.header[Identificador][Descrição],
+//    [RF.01], [Cadastrar membros da família],
+//    [RF.02], [Cadastrar receita],
+//    [RF.03], [Cadastrar despesa],
+//    [RF.04], [Tornar receita ou despesa recorrente],
+//    [RF.05], [Criar objetivo familiar],
+//    [RF.06], [Criar objetivo individual],
+//    [RF.07], [Conectar com instituições financeiras],
+//    [RF.08], [Gerar relatórios],
+//  )
+//)
+
 = Diagramas
 
 == Diagrama de Domínio
 
-//#figure(
-//  image("./hospital-diag-dominio.png", width: 70%)
-//)
-
 == Diagrama de Funcionalidades
 
-//#figure(
-//  image("./hospital-caso-uso.png", width: 50%)
-//)
+== Diagrama de Caso de Uso
+
+#figure(
+  image("./diagramas/caso-de-uso.png", width: 90%)
+)
+
+== Diagrama de Classes
+
+#figure(
+  image("./diagramas/caso-de-uso.png", width: 85%)
+)
 
 #pagebreak()
 
 = Assinatura
 
-#v(4%)
 Teresina,
 
 De acordo,
