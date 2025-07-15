@@ -143,6 +143,10 @@ controle e gerenciamento das finanças das famílias interessadas.
 
 == Diagrama de Funcionalidades
 
+#figure(
+  image("./diagramas/funcionalidade.png", width: 90%)
+)
+
 == Diagrama de Caso de Uso
 
 #figure(

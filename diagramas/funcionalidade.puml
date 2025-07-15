@@ -1,0 +1,18 @@
+@startuml
+
+actor Familiar
+actor Gestor
+
+Gestor -up- (Cadastrar Familiar)
+Gestor -up- (Cadastrar objetivo)
+Gestor -up- (Cadastrar crédito)
+Gestor -up- (Cadastrar débito)
+Gestor -up- (Visualizar relatórios)
+Gestor -up- (Conectar instituições financeiras)
+Familiar -- (Cadastrar objetivo)
+Familiar -- (Cadastrar crédito)
+Familiar -- (Cadastrar débito)
+Familiar -- (Visualizar relatórios)
+Familiar -- (Conectar instituições financeiras)
+
+@enduml
