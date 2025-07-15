@@ -1,0 +1,44 @@
+@startuml
+
+class Familia {
+    id: integer
+    nome: string
+    gestor: Gestor
+    familiares: Familiar[]
+    calculaPatrimonio()
+}
+
+class Familiar {
+    id: integer
+    nome: string
+    fontes: Instituicao[]
+    cadastrarObjetivo(tipo: string)
+    cadastrarCredito()
+    cadastrarDebito()
+    gerarRelatorio()
+    adicionarInstituicoes(intituicao: Instituicao)
+}
+
+class Gestor {
+    adicionarFamiliar()
+}
+
+class Instituicao {
+    codigo: int
+    conta: int
+    autorizarAcesso(cliente: Familiar)
+    calculaPatrimonio(cliente: Familiar)
+}
+
+class Economias {
+    montante: float
+    provisionado: float
+    calcularMontante(cliente: Familiar, banco: Instituicao)
+    calcularProvisao(membro: Familiar, receita: Credito, despesa: Debito)
+}
+
+Familia o-- Familiar
+Familiar <|-- Gestor
+Instituicao -- Familiar
+
+@enduml

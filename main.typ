@@ -14,7 +14,8 @@
       #table(
         columns: 4,
         table.header[Data][Versão][Descrição][Autores],
-        [#datetime.today().display()], [1], [Versão inicial], [Alexandre, Hélio e Isaac],
+        [#datetime.today().display()], [2], [Versão final], [Alexandre, Hélio e Isaac],
+        [2025-07-10], [1], [Versão inicial], [Alexandre, Hélio e Isaac],
       )
     ]
   ],
@@ -151,7 +152,7 @@ controle e gerenciamento das finanças das famílias interessadas.
 == Diagrama de Classes
 
 #figure(
-  image("./diagramas/caso-de-uso.png", width: 85%)
+  image("./diagramas/classe.png", width: 90%)
 )
 
 #pagebreak()
