@@ -10,11 +10,6 @@ class Familia {
 class Familiar {
     id: integer
     nome: string
-    cadastrarObjetivo(objetivo: Objetivo)
-    cadastrarCredito(credito: Transacao)
-    cadastrarDebito(debito: Transacao)
-    gerarRelatorio(): struct
-    adicionarInstituicao(instituicao: InstituicaoFinanceira)
 }
 
 class Gestor {
@@ -25,8 +20,6 @@ class InstituicaoFinanceira {
     codigo: int
     conta: int
     urlAPI: string
-    autorizarAcesso(cliente: Familiar)
-    calculaPatrimonio()
 }
 
 class Objetivo {
@@ -43,11 +36,10 @@ class Transacao {
     valor: float
     data: date
     tipo: string
-    adicionarRecorrencia(frequencia: struct)
 }
 
-Familia *-- Familiar : pertence
-Familiar <|-- Gestor : gere
+Familia -- Familiar : pertence
+Familiar -- Gestor : gere
 Familiar -right- Objetivo : tem
 Familiar -left- Transacao : faz
 InstituicaoFinanceira -- Familiar : conecta

@@ -141,6 +141,10 @@ controle e gerenciamento das finanças das famílias interessadas.
 
 == Diagrama de Domínio
 
+#figure(
+  image("./diagramas/dominio.png", width: 60%)
+)
+
 == Diagrama de Funcionalidades
 
 #figure(
