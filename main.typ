@@ -82,12 +82,47 @@ Os usuários devem ter um navegador compatível com o programa e acesso à inter
 
 === _Mockups_
 
-//#figure(
-//  image("./tela-login.png", width: 30%),
-//  caption: [
-//    Tela de Login.
-//  ],
-//)
+#figure(
+  image("./telas/login.png", width: 50%),
+  caption: [
+    Tela para login.
+  ],
+)
+
+#figure(
+  image("./telas/familiar.png", width: 50%),
+  caption: [
+    Tela para cadastro de familiares.
+  ],
+)
+
+#figure(
+  image("./telas/banco.png", width: 50%),
+  caption: [
+    Tela para conectar instituições financeiras.
+  ],
+)
+
+#figure(
+  image("./telas/dashboard.png", width: 70%),
+  caption: [
+    Dashboard.
+  ],
+)
+
+#figure(
+  image("./telas/transacao.png", width: 50%),
+  caption: [
+    Tela para adicionar transação.
+  ],
+)
+
+#figure(
+  image("./telas/objetivo.png", width: 50%),
+  caption: [
+    Tela para adicionar objetivo.
+  ],
+)
 
 = Público Alvo
 
